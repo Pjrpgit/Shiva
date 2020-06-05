@@ -1,0 +1,171 @@
+004-005 @WRITE_PROGRAM_MEMORY.P1
+004-005 @READ_PROGRAM_MEMORY.P2
+005     portA
+005.0   ra0
+005.1   ra1
+005.2   ra2
+005.3   ra3
+005.4   ra4
+005.5   ra5
+006     kbd
+006     lcd
+007.0   rc0
+007     portC
+007.1   rc1
+007.2   rc2
+007.5   rc5
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B-01C CCP_2
+01C     CCP_2_HIGH
+020     kbd_getc.kbd_call_count
+021.0   kbd_getc.kbd_down
+022     kbd_getc.last_key
+023     kbd_getc.col
+024     MAIN.k
+025-026 MAIN.q
+027-02A MAIN.x
+02B-02E MAIN.l
+02F-032 MAIN.p
+033-036 MAIN.r
+037-03A MAIN.s
+03B-03E MAIN.i
+03F-042 MAIN.e
+043-046 @PRINTF_L32D_73FPFPF.P1
+043     lcd_init.i
+043-044 @ITOF.P1
+043     MAIN.@SCRATCH
+044     @delay_ms1.P1
+044     lcd_init.@SCRATCH
+044     MAIN.@SCRATCH
+045     MAIN.@SCRATCH
+046     MAIN.@SCRATCH
+047     @PRINTF_L32D_73FPFPF.P1
+047-04A @DIVFF.P2
+047     MAIN.@SCRATCH
+048     MAIN.@SCRATCH
+048     @PRINTF_L32D_73FPFPF.@SCRATCH
+049     MAIN.@SCRATCH
+049     @PRINTF_L32D_73FPFPF.@SCRATCH
+04A     MAIN.@SCRATCH
+04A     @PRINTF_L32D_73FPFPF.@SCRATCH
+04B-04E @DIVFF.P1
+04B     MAIN.@SCRATCH
+04B     @PRINTF_L32D_73FPFPF.@SCRATCH
+04C     MAIN.@SCRATCH
+04C     @PRINTF_L32D_73FPFPF.@SCRATCH
+04D     MAIN.@SCRATCH
+04D     @PRINTF_L32D_73FPFPF.@SCRATCH
+04E     MAIN.@SCRATCH
+04E     @PRINTF_L32D_73FPFPF.@SCRATCH
+04F     @DIVFF.@SCRATCH
+04F     MAIN.@SCRATCH
+04F     @PRINTF_L32D_73FPFPF.@SCRATCH
+050-053 @DIV3232.P1
+050     lcd_putc.c
+050-053 @FTOSD.P1
+050-053 @MULFF.P2
+050     @DIVFF.@SCRATCH
+050     MAIN.@SCRATCH
+051     lcd_gotoxy.x
+051     @DIVFF.@SCRATCH
+051     MAIN.@SCRATCH
+052     lcd_gotoxy.y
+052     @DIVFF.@SCRATCH
+052     MAIN.@SCRATCH
+053     lcd_gotoxy.address
+053-056 @ADDFF.P1
+053     @DIVFF.@SCRATCH
+054-057 @DIV3232.P1
+054-057 @MULFF.P2
+054     lcd_gotoxy.@SCRATCH
+054     @DIVFF.@SCRATCH
+054     @FTOSD.@SCRATCH
+055     lcd_send_byte.address
+056     lcd_send_byte.n
+057-05A @ADDFF.P1
+057     lcd_read_byte.low
+057     lcd_send_byte.@SCRATCH
+058     lcd_send_nibble.n
+058     lcd_read_byte.high
+058     @MULFF.@SCRATCH
+058     @DIV3232.@SCRATCH
+059     lcd_read_byte.@SCRATCH
+059     @MULFF.@SCRATCH
+059     @DIV3232.@SCRATCH
+05A     @MULFF.@SCRATCH
+05A     @DIV3232.@SCRATCH
+05B     @ADDFF.@SCRATCH
+05B     @MULFF.@SCRATCH
+05B     @DIV3232.@SCRATCH
+05C     @ADDFF.@SCRATCH
+05C     @MULFF.@SCRATCH
+05C     @DIV3232.@SCRATCH
+05D     @ADDFF.@SCRATCH
+05E     @ADDFF.@SCRATCH
+05F     @ADDFF.@SCRATCH
+060     @ADDFF.@SCRATCH
+061     @ADDFF.@SCRATCH
+062     @ADDFF.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+085     TRISA
+087     TRISC
+10D     @READ_PROGRAM_MEMORY.P1
+10D     @WRITE_PROGRAM_MEMORY.P2
+10F     @WRITE_PROGRAM_MEMORY.P1
+10F     @READ_PROGRAM_MEMORY.P2
+
+0031  @delay_ms1
+0004  LCD_INIT_STRING
+004A  lcd_read_byte
+003E  lcd_send_nibble
+0049  lcd_send_byte
+0082  lcd_init
+00B1  lcd_gotoxy
+00C3  lcd_putc
+00AE  kbd_init
+00EA  @ITOF
+017E  @DIVFF
+024A  @ADDFF
+0109  @MULFF
+04BA  MAIN
+000C  @const254
+001D  @const256
+038B  @FTOSD
+03AC  @DIV3232
+03EE  @PRINTF_L32D_73FPFPF
+04BA  @cinit
+
+Project Files:
+    Prueba_sensores.c
+    ..\..\..\..\..\Archivos de programa\PICC\devices\16F876.h
+    LCD1.c
+    kbd1.c
+    ..\..\..\..\..\Archivos de programa\PICC\drivers\math.h
+
+Units:
+    C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F876
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.err
+    Ext Symbols: C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.esym
+    INHX8:       C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.hex
+    Symbols:     C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.sym
+    List:        C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.lst
+    Debug/COFF:  C:\Documents and Settings\PJ\Escritorio\SHIVA\Simulación\Prueba_sensores.cof
+    Call Tree:   Prueba_sensores.tre
+    Statistics:  Prueba_sensores.sta

@@ -1,0 +1,103 @@
+
+ROM used: 2541 (31%)
+          3099 (38%) including unused fragments
+
+          4 Average locations per line
+          16 Average locations per statement
+
+RAM used: 46 (12%) at main() level
+          62 (17%) worst case
+
+Stack used: 5 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  100    59  36  prueba2.c
+  244     0   0  C:\Archivos de programa\PICC\devices\16F876.h
+  180    63  39  LCD1.c
+  146    40  25  kbd1.c
+----- -----
+  670   162 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   1   1             @delay_ms1
+0      8   0   0             @const53
+ Inline        3   463  4.3  lcd_read_byte
+0     12   0   1   134  2.2  lcd_send_nibble
+0     58   2   3   317  4.3  lcd_send_byte
+0     44   2   2   422  4.7  lcd_init
+0     18   1   4   186  5.5  lcd_gotoxy
+0     37   1   1   272  4.1  lcd_putc
+0     16   1   0             @const80
+0      3   0   0     3  0.0  kbd_init
+0    104   4   3  4548 10.2  kbd_getc
+0     39   2   2             @MUL88
+1   1051  41  35  2649 11.0  MAIN
+0     19   1   0             @const104
+0     29   1   2             @ITOF
+0     17   1   0             @const108
+0      9   0   0             @const109
+0     17   1   0             @const110
+0    117   5  13             @MULFF
+0    202   8  14             @DIVFF
+0     63   2  10             @FLT
+0    321  13  16             @ADDFF
+0     17   1   0             @const123
+0     33   1   5             @FTOSD
+0     66   3  13             @DIV3232
+0    202   8  13             @PRINTF_L32D_73FPFPF
+0     14   1   0             @const134
+
+Program metrics:
+    Functions               9
+    Statements              162
+    Comments                156
+    Volume (V)              11919
+    Difficilty (D)          46.5
+    Effort to implement (E) 554231
+    Time to implement (T)   8 hours, 33 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   28
+    Maintainability (MI)    94
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1486  558  
+00800-00FFF  1051  997  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const53
+     9    41    43    39     0    lcd_read_byte
+     5    17    15    15     0    lcd_send_nibble
+     9    30    31    29     0    lcd_send_byte
+    10    37    41    35     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    22    35    20     4    lcd_putc
+     0     1     0     0     0    @const80
+     2     1     2     0     0    kbd_init
+    20   216   356   221    12    kbd_getc
+     0     1     0     0     0    @MUL88
+    22   157   197   157     9    MAIN
+     0     1     0     0     0    @const104
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @const108
+     0     1     0     0     0    @const109
+     0     1     0     0     0    @const110
+     0     1     0     0     0    @MULFF
+     0     1     0     0     0    @DIVFF
+     0     1     0     0     0    @FLT
+     0     1     0     0     0    @ADDFF
+     0     1     0     0     0    @const123
+     0     1     0     0     0    @FTOSD
+     0     1     0     0     0    @DIV3232
+     0     1     0     0     0    @PRINTF_L32D_73FPFPF
+     0     1     0     0     0    @const134

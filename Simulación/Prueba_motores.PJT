@@ -1,0 +1,32 @@
+[PROJECT]
+Target=Prueba_motores.HEX
+Development_Mode=2
+Processor=0x876F
+ToolSuite=CCS
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=Prueba_motores.c;
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[Prueba_motores.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=C:\DOCUME~1\PJ\ESCRIT~1\SHIVA\SIMULA~1\PRUEBA~2.C
+
+[Windows]
+0=0000 C:\DOCUME~1\PJ\ESCRIT~1\SHIVA\SIMULA~1\PRUEBA~2.C 0 0 796 451 3 0
+

@@ -1,0 +1,40 @@
+[PROJECT]
+Target=TECLADO_LCD1.HEX
+Development_Mode=2
+Processor=0x876F
+ToolSuite=CCS
+Processor_Text=PIC16F876
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=J:\Simulación\TECLADO_LCD1.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[TECLADO_LCD1.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=J:\SIMULA~1\TECLAD~1.C
+
+[Windows]
+0=0000 J:\SIMULA~1\TECLAD~1.C 0 0 796 451 3 0
+
+[Opened Files]
+1=J:\Simulación\TECLADO_LCD1.c
+2=
+[Units]
+Count=1
+1=TECLADO_LCD1.c (main)
+Link=0

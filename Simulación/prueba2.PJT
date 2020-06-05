@@ -1,0 +1,42 @@
+[PROJECT]
+Target=prueba2.HEX
+Development_Mode=2
+Processor=0x876F
+ToolSuite=CCS
+Processor_Text=PIC16F876
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=J:\Simulación\prueba2.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[prueba2.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=prueba2.c
+
+[Windows]
+0=0000 prueba2.c 0 0 796 451 3 0
+
+[Opened Files]
+1=J:\Simulación\prueba2.c
+2=
+3=C:\Documents and Settings\PJ\Mis documentos\TODO\Ejemplos C PE21 Curso 2008_2009\PWM\PWM1.c
+4=
+[Units]
+Count=1
+1=prueba2.c (main)
+Link=0

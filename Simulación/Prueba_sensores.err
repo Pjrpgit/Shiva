@@ -1,0 +1,6 @@
+>>> Warning 203 "Prueba_sensores.c" Line 53(1,1): Condition always TRUE
+>>> Warning 202 "Prueba_sensores.c" Line 31(9,10): Variable never used:   k
+>>> Warning 202 "Prueba_sensores.c" Line 33(10,11): Variable never used:   x
+>>> Warning 202 "Prueba_sensores.c" Line 34(10,11): Variable never used:   l
+      Memory usage:   ROM=21%      RAM=15% - 20%
+      0 Errors,  4 Warnings.

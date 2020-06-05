@@ -1,0 +1,97 @@
+
+ROM used: 1306 (16%)
+          1306 (16%) including unused fragments
+
+          2 Average locations per line
+          11 Average locations per statement
+
+RAM used: 21 (6%) at main() level
+          44 (12%) worst case
+
+Stack used: 5 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   61    19  16  TECLADO_LCD1.c
+  244     0   0  C:\Archivos de programa\PICC\devices\16F876.h
+  180    63  52  LCD1.c
+  146    40  33  kbd1.c
+----- -----
+  631   122 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   2   1             @delay_ms1
+0      8   1   0             @const53
+ Inline        3   463  4.3  lcd_read_byte
+0     12   1   1   134  2.2  lcd_send_nibble
+0     58   4   3   317  4.3  lcd_send_byte
+0     44   3   2   422  4.7  lcd_init
+0     18   1   4   186  5.5  lcd_gotoxy
+0     37   3   1   272  4.1  lcd_putc
+0     16   1   0             @const80
+0      3   0   0     3  0.0  kbd_init
+0    104   8   3  4548 10.2  kbd_getc
+0     39   3   2             @MUL88
+0    165  13  11   662  5.2  MAIN
+0     31   2   2             @ITOF
+0    117   9  13             @MULFF
+0    204  16  14             @DIVFF
+0     22   2   0             @const108
+0     33   3   5             @FTOSD
+0     66   5  13             @DIV3232
+0    204  16  13             @PRINTF_L32D_73FPFPF
+0     12   1   0             @const117
+0     12   1   0             @const118
+0     21   2   3             @DIV88
+0     55   4   2             @PRINTF_U_73
+
+Program metrics:
+    Functions               9
+    Statements              122
+    Comments                160
+    Volume (V)              9344
+    Difficilty (D)          40.8
+    Effort to implement (E) 381331
+    Time to implement (T)   5 hours, 53 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   20
+    Maintainability (MI)    104
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1302  742  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const53
+     9    41    43    39     0    lcd_read_byte
+     5    17    15    15     0    lcd_send_nibble
+     9    30    31    29     0    lcd_send_byte
+    10    37    41    35     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    22    35    20     4    lcd_putc
+     0     1     0     0     0    @const80
+     2     1     2     0     0    kbd_init
+    20   216   356   221    12    kbd_getc
+     0     1     0     0     0    @MUL88
+    11    54    59    51     1    MAIN
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @MULFF
+     0     1     0     0     0    @DIVFF
+     0     1     0     0     0    @const108
+     0     1     0     0     0    @FTOSD
+     0     1     0     0     0    @DIV3232
+     0     1     0     0     0    @PRINTF_L32D_73FPFPF
+     0     1     0     0     0    @const117
+     0     1     0     0     0    @const118
+     0     1     0     0     0    @DIV88
+     0     1     0     0     0    @PRINTF_U_73

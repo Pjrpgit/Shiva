@@ -1,0 +1,168 @@
+004-005 @WRITE_PROGRAM_MEMORY.P1
+004-005 @READ_PROGRAM_MEMORY.P2
+006     kbd
+006     lcd
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     kbd_getc.kbd_call_count
+021.0   kbd_getc.kbd_down
+022     kbd_getc.last_key
+023     kbd_getc.col
+024     @TRIS_C
+025     MAIN.k
+026-027 MAIN.q
+028-02B MAIN.y
+02C-02F MAIN.s
+030-033 MAIN.x
+034-037 MAIN.z
+038-03B MAIN.l
+03C     kbd_getc.kchar
+03C     lcd_init.i
+03C     MAIN.@SCRATCH
+03D-040 @PRINTF_L32D_73FPFPF.P1
+03D-040 @FLT.P2
+03D     kbd_getc.row
+03D-03E @ITOF.P1
+03D     lcd_init.@SCRATCH
+03D     MAIN.@SCRATCH
+03E     @MUL88.P1
+03E     kbd_getc.@SCRATCH
+03E     MAIN.@SCRATCH
+03F     @MUL88.P1
+03F     MAIN.@SCRATCH
+040     MAIN.@SCRATCH
+041     @PRINTF_L32D_73FPFPF.P1
+041-044 @FLT.P2
+041     MAIN.@SCRATCH
+042     MAIN.@SCRATCH
+042     @PRINTF_L32D_73FPFPF.@SCRATCH
+043     MAIN.@SCRATCH
+043     @PRINTF_L32D_73FPFPF.@SCRATCH
+044-047 @DIVFF.P1
+044     MAIN.@SCRATCH
+044     @PRINTF_L32D_73FPFPF.@SCRATCH
+045     MAIN.@SCRATCH
+045     @FLT.@SCRATCH
+045     @PRINTF_L32D_73FPFPF.@SCRATCH
+046     MAIN.@SCRATCH
+046     @FLT.@SCRATCH
+046     @PRINTF_L32D_73FPFPF.@SCRATCH
+047     MAIN.@SCRATCH
+047     @PRINTF_L32D_73FPFPF.@SCRATCH
+048-04B @ADDFF.P1
+048-04B @DIVFF.P2
+048     @PRINTF_L32D_73FPFPF.@SCRATCH
+049     @PRINTF_L32D_73FPFPF.@SCRATCH
+04A     lcd_putc.c
+04A-04D @DIV3232.P1
+04A-04D @MULFF.P2
+04A-04D @FTOSD.P3
+04B     lcd_gotoxy.x
+04B     @delay_ms1.P1
+04C-04F @ADDFF.P1
+04C     lcd_gotoxy.y
+04C     @DIVFF.@SCRATCH
+04D     lcd_gotoxy.address
+04D     @DIVFF.@SCRATCH
+04E-051 @MULFF.P1
+04E-051 @DIV3232.P2
+04E     lcd_gotoxy.@SCRATCH
+04E     @DIVFF.@SCRATCH
+04E     @FTOSD.@SCRATCH
+04F     lcd_send_byte.address
+04F     @DIVFF.@SCRATCH
+050     lcd_send_byte.n
+050     @DIVFF.@SCRATCH
+050     @ADDFF.@SCRATCH
+051     lcd_read_byte.low
+051     lcd_send_byte.@SCRATCH
+051     @DIVFF.@SCRATCH
+051     @ADDFF.@SCRATCH
+052     lcd_read_byte.high
+052     lcd_send_nibble.n
+052     @MULFF.@SCRATCH
+052     @ADDFF.@SCRATCH
+052     @DIV3232.@SCRATCH
+053     lcd_read_byte.@SCRATCH
+053     @MULFF.@SCRATCH
+053     @ADDFF.@SCRATCH
+053     @DIV3232.@SCRATCH
+054     @MULFF.@SCRATCH
+054     @ADDFF.@SCRATCH
+054     @DIV3232.@SCRATCH
+055     @MULFF.@SCRATCH
+055     @ADDFF.@SCRATCH
+055     @DIV3232.@SCRATCH
+056     @MULFF.@SCRATCH
+056     @ADDFF.@SCRATCH
+056     @DIV3232.@SCRATCH
+057     @ADDFF.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+10D     @WRITE_PROGRAM_MEMORY.P1
+10D     @READ_PROGRAM_MEMORY.P2
+10F     @READ_PROGRAM_MEMORY.P1
+10F     @WRITE_PROGRAM_MEMORY.P2
+
+0079  @delay_ms1
+0004  LCD_INIT_STRING
+009B  lcd_read_byte
+008E  lcd_send_nibble
+009A  lcd_send_byte
+00D4  lcd_init
+0103  lcd_gotoxy
+0115  lcd_putc
+000C  KEYS
+0100  kbd_init
+0161  kbd_getc
+013A  @MUL88
+0800  MAIN
+001C  @const104
+01C9  @ITOF
+002F  @const108
+0040  @const109
+0049  @const110
+01E6  @MULFF
+025B  @DIVFF
+0325  @FLT
+0364  @ADDFF
+005A  @const123
+04A5  @FTOSD
+04C6  @DIV3232
+0508  @PRINTF_L32D_73FPFPF
+006B  @const134
+0800  @cinit
+
+Project Files:
+    prueba2.c
+    C:\Archivos de programa\PICC\devices\16F876.h
+    LCD1.c
+    kbd1.c
+
+Units:
+    J:\Simulación\prueba2.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F876
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      J:\Simulación\prueba2.err
+    Ext Symbols: J:\Simulación\prueba2.esym
+    INHX8:       J:\Simulación\prueba2.hex
+    Symbols:     J:\Simulación\prueba2.sym
+    List:        J:\Simulación\prueba2.lst
+    Debug/COFF:  J:\Simulación\prueba2.cof
+    Call Tree:   prueba2.tre
+    Statistics:  prueba2.sta
